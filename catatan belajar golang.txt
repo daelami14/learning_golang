@@ -1,0 +1,17 @@
+1 Belajar golang
+- install golang
+- hello word
+
+
+1. handler
+2. route
+3.midlleware
+
+
+go mod init nama folder ( untuk membuat mod.go)
+go get -u github.com/gin-gonic/gin ( untuk download gin)
+
+-- unit testing --
+go test ./... (untuk running unit tetsing dalam 1 folder)
+
+
