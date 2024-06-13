@@ -1,4 +1,4 @@
-package handler_test
+package handler
 
 import (
 	"belajar_golang/pertemuan_ke_4/entity"

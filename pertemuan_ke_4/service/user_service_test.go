@@ -6,11 +6,13 @@ import (
 	"belajar_golang/pertemuan_ke_4/entity"
 	"belajar_golang/pertemuan_ke_4/service"
 
+	"belajar_golang/pertemuan_ke_4/test/mock/service"
+
 	"github.com/stretchr/testify/assert"
 )
 
 func TestCreateUser(t *testing.T) {
-	mockRepo := &MockUserRepository{}
+	mockRepo := &service.MockUserRepository{}
 	userService := service.NewUserService(mockRepo)
 
 	t.Run("CreateUser - Success", func(t *testing.T) {
@@ -90,7 +92,7 @@ func TestDeleteUser(t *testing.T) {
 }
 
 func TestGetAllUsers(t *testing.T) {
-	mockRepo := &MockUserRepository{}
+	mockRepo := &service.MockUserRepository{}
 	userService := service.NewUserService(mockRepo)
 
 	user1 := &entity.User{Name: "Test1", Email: "test1@example.com", Password: "password"}

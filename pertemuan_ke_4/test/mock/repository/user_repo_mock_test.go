@@ -1,10 +1,11 @@
-package service_test
+package repository
 
 import (
 	"belajar_golang/pertemuan_ke_4/entity"
 	"time"
 )
 
+// MockUserRepository adalah mock untuk IUserRepository
 type MockUserRepository struct {
 	users []entity.User
 }
