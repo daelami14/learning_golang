@@ -1,8 +1,8 @@
-package handler
+package handler_test
 
 import (
-	"belajar_golang/pertemuan_ke_4/entity"
 	"errors"
+	"learning_golang/session4_unit_test_crud/entity"
 )
 
 type MockUserService struct{}

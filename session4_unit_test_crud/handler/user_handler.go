@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"belajar_golang/pertemuan_ke_4/entity"
+	"learning_golang/session4_unit_test_crud/entity"
 
-	"belajar_golang/pertemuan_ke_4/service"
+	"learning_golang/session4_unit_test_crud/service"
 
 	"github.com/gin-gonic/gin"
 )

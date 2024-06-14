@@ -3,7 +3,7 @@ package service
 import (
 	"fmt"
 
-	"belajar_golang/pertemuan_ke_4/entity"
+	"learning_golang/session4_unit_test_crud/entity"
 )
 
 // IUserService mendefinisikan interface untuk layanan pengguna

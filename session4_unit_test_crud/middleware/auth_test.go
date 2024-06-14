@@ -1,7 +1,7 @@
 package middleware_test
 
 import (
-	"belajar_golang/pertemuan_ke_4/middleware"
+	"learning_golang/session4_unit_test_crud/middleware"
 	"net/http"
 	"net/http/httptest"
 	"testing"

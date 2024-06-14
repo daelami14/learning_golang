@@ -1,7 +1,7 @@
 package main
 
 import (
-	"belajar_golang/pertemuan_ke_2/router"
+	"learning_golang/session2_crud_gin/router"
 	"log"
 
 	"github.com/gin-gonic/gin"

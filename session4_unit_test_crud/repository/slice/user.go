@@ -3,8 +3,8 @@ package slice
 import (
 	"time"
 
-	"belajar_golang/pertemuan_ke_4/entity"
-	"belajar_golang/pertemuan_ke_4/service"
+	"learning_golang/session4_unit_test_crud/entity"
+	"learning_golang/session4_unit_test_crud/service"
 )
 
 // userRepository adalah implementasi dari IUserRepository yang menggunakan slice untuk menyimpan data pengguna

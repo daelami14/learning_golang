@@ -1,11 +1,11 @@
 package main
 
 import (
-	"belajar_golang/pertemuan_ke_4/entity"
-	"belajar_golang/pertemuan_ke_4/handler"
-	"belajar_golang/pertemuan_ke_4/repository/slice"
-	"belajar_golang/pertemuan_ke_4/router"
-	"belajar_golang/pertemuan_ke_4/service"
+	"learning_golang/session4_unit_test_crud/entity"
+	"learning_golang/session4_unit_test_crud/handler"
+	"learning_golang/session4_unit_test_crud/repository/slice"
+	"learning_golang/session4_unit_test_crud/router"
+	"learning_golang/session4_unit_test_crud/service"
 	"log"
 
 	"github.com/gin-gonic/gin"

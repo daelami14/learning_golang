@@ -3,16 +3,14 @@ package service_test
 import (
 	"testing"
 
-	"belajar_golang/pertemuan_ke_4/entity"
-	"belajar_golang/pertemuan_ke_4/service"
-
-	"belajar_golang/pertemuan_ke_4/test/mock/service"
+	"learning_golang/session4_unit_test_crud/entity"
+	"learning_golang/session4_unit_test_crud/service"
 
 	"github.com/stretchr/testify/assert"
 )
 
 func TestCreateUser(t *testing.T) {
-	mockRepo := &service.MockUserRepository{}
+	mockRepo := &MockUserRepository{}
 	userService := service.NewUserService(mockRepo)
 
 	t.Run("CreateUser - Success", func(t *testing.T) {
@@ -92,7 +90,7 @@ func TestDeleteUser(t *testing.T) {
 }
 
 func TestGetAllUsers(t *testing.T) {
-	mockRepo := &service.MockUserRepository{}
+	mockRepo := &MockUserRepository{}
 	userService := service.NewUserService(mockRepo)
 
 	user1 := &entity.User{Name: "Test1", Email: "test1@example.com", Password: "password"}

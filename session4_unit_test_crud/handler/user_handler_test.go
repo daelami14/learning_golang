@@ -9,10 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"belajar_golang/pertemuan_ke_4/entity"
-	"belajar_golang/pertemuan_ke_4/handler"
-
-	"belajar_golang/pertemuan_ke_4/test/mock/service"
+	"learning_golang/session4_unit_test_crud/entity"
+	"learning_golang/session4_unit_test_crud/handler"
 
 	"github.com/gin-gonic/gin"
 )
@@ -21,7 +19,7 @@ func TestGetAllUserHandler(t *testing.T) {
 	t.Run("Positive Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -45,7 +43,7 @@ func TestCreateUserHandler(t *testing.T) {
 	t.Run("Positive Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -72,7 +70,7 @@ func TestCreateUserHandler(t *testing.T) {
 	t.Run("Negative Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 
 		userHandler := handler.NewUserHandler(mockUserService)
 
@@ -93,7 +91,7 @@ func TestGetUserHandler(t *testing.T) {
 	t.Run("Positive Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -115,7 +113,7 @@ func TestGetUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - no data", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -133,7 +131,7 @@ func TestGetUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - cannot convert to integer", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -153,7 +151,7 @@ func TestUpdateUserHandler(t *testing.T) {
 	t.Run("Positive Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -180,7 +178,7 @@ func TestUpdateUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - invalid id", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -198,7 +196,7 @@ func TestUpdateUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - invalid json", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -216,7 +214,7 @@ func TestUpdateUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - not found", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -239,7 +237,7 @@ func TestDeleteUserHandler(t *testing.T) {
 	t.Run("Positive Test Case", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -256,7 +254,7 @@ func TestDeleteUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - Cannot Convert Int to String", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()
@@ -273,7 +271,7 @@ func TestDeleteUserHandler(t *testing.T) {
 	t.Run("Negative Test Case - Not Found", func(t *testing.T) {
 		gin.SetMode(gin.TestMode)
 
-		mockUserService := &service.MockUserService{}
+		mockUserService := &MockUserService{}
 		userHandler := handler.NewUserHandler(mockUserService)
 
 		r := gin.Default()

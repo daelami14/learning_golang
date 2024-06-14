@@ -1,8 +1,8 @@
 package router
 
 import (
-	"belajar_golang/pertemuan_ke_2/handler"
-	"belajar_golang/pertemuan_ke_2/middleware"
+	"learning_golang/session2_crud_gin/handler"
+	"learning_golang/session2_crud_gin/middleware"
 
 	"github.com/gin-gonic/gin"
 )

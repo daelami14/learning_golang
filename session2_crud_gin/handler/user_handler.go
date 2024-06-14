@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"belajar_golang/pertemuan_ke_2/entity"
+	"learning_golang/session2_crud_gin/entity"
 	"net/http"
 	"strconv"
 	"time"

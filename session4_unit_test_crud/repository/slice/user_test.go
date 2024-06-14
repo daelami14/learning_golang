@@ -3,8 +3,8 @@ package slice_test
 import (
 	"testing"
 
-	"belajar_golang/pertemuan_ke_4/entity"
-	"belajar_golang/pertemuan_ke_4/repository/slice"
+	"learning_golang/session4_unit_test_crud/entity"
+	"learning_golang/session4_unit_test_crud/repository/slice"
 
 	"github.com/stretchr/testify/require"
 )
